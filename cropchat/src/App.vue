@@ -1,5 +1,14 @@
 <script>
   require('material-design-lite')
+  export default {
+    name: 'app',
+    methods: {
+      hideMenu: function () {
+        document.getElementsByClassName('mdl-layout__drawer')[0].classList.remove('is-visible')
+        document.getElementsByClassName('mdl-layout__obfuscator')[0].classList.remove('is-visible')
+      }
+    }
+  }
 </script>
 <style>
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
